@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgcamera"
+        android:layout_width="59dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="282dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgdrop"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <ImageView
+        android:id="@+id/imginstagram"
+        android:layout_width="144dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toEndOf="@+id/imgcamera"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <ImageView
+        android:id="@+id/imgigtv"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toEndOf="@+id/imginstagram"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/ic_direct" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imginstagram" />
+
+
+    <ImageView
+        android:id="@+id/imgprof1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/ic_profile_pic" />
+
+    <ImageView
+        android:id="@+id/imgprof2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toEndOf="@+id/imgprof1"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_profile_pic" />
+
+    <ImageView
+        android:id="@+id/imgprof3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/imgdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@+id/imgprof2"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.413"
+        app:srcCompat="@drawable/ic_profile_pic" />
+
+    <ImageView
+        android:id="@+id/imgprof4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/imgdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toEndOf="@+id/imgprof3"
+        app:layout_constraintTop_toTopOf="@+id/imgprof3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_profile_pic" />
+
+    <ImageView
+        android:id="@+id/imgprof5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/imgdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toEndOf="@+id/imgprof4"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.413"
+        app:srcCompat="@drawable/ic_profile_pic" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="40dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/imgdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgprof1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/imgperson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_profile_pic" />
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/username"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgdrop"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageView
+        android:id="@+id/imgdrop"
+        android:layout_width="38dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvusername"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24"
+        app:tint="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/imgperson"
+        android:layout_width="410dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgcomment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvusername"
+        app:srcCompat="@drawable/Apples" />
+
+    <ImageView
+        android:id="@+id/imgLike"
+        android:layout_width="51dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="382dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgperson"
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+    <ImageView
+        android:id="@+id/imgcomment"
+        android:layout_width="37dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toEndOf="@+id/imgLike"
+        app:layout_constraintTop_toBottomOf="@+id/imgperson"
+        app:srcCompat="@drawable/ic_comment_icon" />
+
+    <ImageView
+        android:id="@+id/imgreply"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toEndOf="@+id/imgcomment"
+        app:layout_constraintTop_toBottomOf="@+id/imgperson"
+        app:srcCompat="@drawable/ic_direct" />
+
+    <ImageView
+        android:id="@+id/imgbookmark"
+        android:layout_width="26dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="134dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toEndOf="@+id/imgreply"
+        app:layout_constraintTop_toBottomOf="@+id/imgperson"
+        app:layout_constraintVertical_bias="0.054"
+        app:srcCompat="@drawable/ic_bookmark" />
+
+    <ImageView
+        android:id="@+id/imgone"
+        android:layout_width="37dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLike"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/ic_profile_pic" />
+
+    <ImageView
+        android:id="@+id/imgtwo"
+        android:layout_width="67dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgcomment"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgLike"
+        app:layout_constraintTop_toBottomOf="@+id/imgLike"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/ic_profile_pic" />
+
+    <TextView
+        android:id="@+id/tvliked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="296dp"
+        android:text="@string/liked"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcomment" />
+
+    <TextView
+        android:id="@+id/tvby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="5dp"
+        android:text="by"
+        app:layout_constraintBottom_toTopOf="@+id/tvcaption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toEndOf="@+id/tvliked"
+        app:layout_constraintTop_toBottomOf="@+id/imgreply"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <TextView
+        android:id="@+id/tvuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="213dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/user"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvcaption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/tvby"
+        app:layout_constraintTop_toBottomOf="@+id/imgreply"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <TextView
+        android:id="@+id/tvand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="5dp"
+        android:text="and"
+        app:layout_constraintBottom_toTopOf="@+id/tvcaption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvuser"
+        app:layout_constraintTop_toBottomOf="@+id/imgreply"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <TextView
+        android:id="@+id/tvothers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/_365_others"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etcomment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvand"
+        app:layout_constraintTop_toBottomOf="@+id/imgreply"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <TextView
+        android:id="@+id/tvcaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="172dp"
+        android:text="Write your caption here .... #hashtag"
+        app:layout_constraintBottom_toTopOf="@+id/etcomment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvliked"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <EditText
+        android:id="@+id/etcomment"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="@string/add_comment_here"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgone"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvcaption"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgtwo"
+        app:layout_constraintVertical_bias="0.677"
+        app:srcCompat="@drawable/ic_profile_pic" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
